@@ -1,0 +1,19 @@
+
+<div>
+    <app-search-options 
+        [refreshData]="getStories.bind(this)" 
+        [setPage]="setPage.bind(this)"
+        [setPageSize]="setPageSize.bind(this)"
+        [page]="page"
+        [pageSize]="pageSize" 
+        [setTitle]="setTitle.bind(this)" 
+        [title]="title"
+        >
+    </app-search-options>
+    <div class="story-container">
+        <ul *ngFor="let story of stories">
+            <app-story [title]="story.title" [url]="story.url" [score]="story.score"></app-story>
+        </ul>
+    </div>
+</div>
+

@@ -1,0 +1,16 @@
+
+<div class="searchOptionsContainer">
+    <div class="searchFieldContainer">
+        <div>Page Size</div>
+        <input type="text" (change)="setPageSize($event.target.value)" [value]="pageSize">
+    </div>
+    <div class="searchFieldContainer">
+        <div>Page</div>
+        <input type="text" (change)="setPage($event.target.value)" [value]="page">
+    </div>
+    <div class="searchFieldContainer">
+        <div>Search</div>
+        <input type="text" (change)="setTitle($event.target.value)" [value]="title">
+    </div>
+    <button (click)="refreshData()">Refresh</button>
+</div>

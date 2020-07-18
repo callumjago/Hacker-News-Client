@@ -1,0 +1,4 @@
+.story-container {
+    overflow-y: scroll;
+    display: inline;
+}
