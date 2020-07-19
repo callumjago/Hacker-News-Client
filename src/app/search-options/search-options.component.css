@@ -3,3 +3,11 @@
     justify-content: center;
     text-align: center;
 }
+
+.searchFieldContainer {
+    margin-right: 25px;
+}
+
+.pageOptionsContainer {
+    display: flex;
+}

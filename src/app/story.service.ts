@@ -7,7 +7,7 @@ import { Story } from './story/story';
   providedIn: 'root'
 })
 export class StoryService {
-  private storyUrl = 'https://localhost:44345/api/Item/new'
+  private storyUrl = 'https://hackernewsapi.azurewebsites.net/api/Item/new'
 
   constructor(
     private http: HttpClient

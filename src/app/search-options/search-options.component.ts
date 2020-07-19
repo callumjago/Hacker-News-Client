@@ -19,8 +19,20 @@ export class SearchOptionsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  ngOnChanges() {
-    console.log('stuff changeed')
+  pageDown() {
+    if (this.page > 1) {
+      this.setPage(this.page - 1);
+      this.refreshData();
+    }
   }
 
+  pageUp() {
+    this.setPage(this.page + 1);
+    this.refreshData();
+  }
+
+  setPageSizeAndRefresh(newPageSize: number) {
+    this.setPageSize(newPageSize);
+    this.refreshData();
+  }
 }
